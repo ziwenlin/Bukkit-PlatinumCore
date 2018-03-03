@@ -1,5 +1,5 @@
 name: ${project.artifactId}
-main: eu.platinumcore.plugin.PlatinumCore
+main: eu.platinumcore.plugin.guns.${project.artifactId}
 version: ${project.version}
 authors: 
 commands:

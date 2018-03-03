@@ -1,17 +1,18 @@
-package eu.platinumcore.plugin;
+package eu.platinumcore.plugin.guns.commands;
 
-import org.bukkit.Bukkit;
+import java.util.List;
+
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-public class Commands implements CommandExecutor {
+import eu.platinumcore.plugin.guns.PlatinumCoreGuns;
+
+public class Commands implements TabExecutor {
 
 	private Plugin plugin = PlatinumCoreGuns.getPlugin(PlatinumCoreGuns.class);
-	private Metadata md = new Metadata();
-
 	private CommandSender sender;
 	private Command cmd;
 	private String label;
@@ -28,37 +29,14 @@ public class Commands implements CommandExecutor {
 		setLabel(label);
 		setArgs(args);
 		setCommand(cmd.getName());
-		Runnables.taskA(() -> commands());
+		commandGuns();
 		return valid;
 	}
 
-	private void commands() {
-		switch (getCommand()) {
-		case "platinumcore":
-			commandPlatinumcore();
-		case "guns":
-			commandGuns();
-		default:
-			break;
-		}
-
-	}
-
-	private void commandPlatinumcore() {
-		if (getSender() instanceof Player) {
-			player = (Player) getSender();
-			if (getArgs().length > 0) {
-				switch (getArgs()[0]) {
-				case "reload":
-					Bukkit.broadcastMessage("Reloading PlatinumCore configs!");
-					valid = true;
-					break;
-				default:
-					valid = false;
-					break;
-				}
-			}
-		}
+	@Override
+	public List<String> onTabComplete(CommandSender arg0, Command arg1, String arg2, String[] arg3) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	private void commandGuns() {
@@ -74,6 +52,7 @@ public class Commands implements CommandExecutor {
 			} else {
 				player.sendMessage("Respawning " + player.getDisplayName() + " over 3 seconds if dead!");
 			}
+			valid = true;
 		}
 	}
 

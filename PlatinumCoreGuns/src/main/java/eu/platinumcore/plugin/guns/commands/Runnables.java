@@ -1,4 +1,4 @@
-package eu.platinumcore.plugin;
+package eu.platinumcore.plugin.guns.commands;
 
 import java.util.concurrent.Callable;
 
@@ -6,9 +6,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import eu.platinumcore.plugin.guns.PlatinumCoreGuns;
+
 public class Runnables {
 
-	private static Plugin plugin = PlatinumCoreGuns.getPlugin(PlatinumCoreGuns.class);
+	private final static Plugin plugin = PlatinumCoreGuns.getPlugin();
 
 	public static void taskA(Runnable task) {
 		new BukkitRunnable() {
@@ -36,10 +38,6 @@ public class Runnables {
 					if (!(boolean) task.call()) {
 						cancel();
 					}
-				} catch (IllegalStateException e) {
-					Bukkit.broadcastMessage(task.toString() + " caused an exception!");
-					e.printStackTrace();
-					cancel();
 				} catch (Exception e) {
 					Bukkit.broadcastMessage(task.toString() + " caused an exception!");
 					e.printStackTrace();
@@ -75,10 +73,6 @@ public class Runnables {
 					if (!task.call()) {
 						cancel();
 					}
-				} catch (IllegalStateException e) {
-					Bukkit.broadcastMessage(task.toString() + " caused an exception!");
-					e.printStackTrace();
-					cancel();
 				} catch (Exception e) {
 					Bukkit.broadcastMessage(task.toString() + " caused an exception!");
 					e.printStackTrace();
