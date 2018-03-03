@@ -1,0 +1,192 @@
+Assault Rifle:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: 
+    Fire: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 20
+    Range: 100
+    Damage: 5
+    Gravity: 1
+    TrailVisibility: 20
+    ExplosionRange:  0
+    ExplosionPower:  0
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Rifle Drum
+    Bullets: 1
+    MaxAmmo: 32
+    Cooldown: 3
+    RecoilType: 0
+    Spread: 0
+Assault Shotgun:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: 
+    Fire: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 20
+    Range: 100
+    Damage: 3
+    Gravity: 1
+    TrailVisibility: 10
+    ExplosionRange: 0
+    ExplosionPower: 0
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Shotgun Magazine
+    Bullets: 5
+    MaxAmmo: 18
+    Cooldown: 6
+    RecoilType: 0
+    Spread: 10
+Pump-Action Shotgun:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: 
+    Fire: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 20
+    Range: 150
+    Damage: 3
+    Gravity: 1
+    TrailVisibility: 20
+    ExplosionRange: 0
+    ExplosionPower: 0
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Shotgun Ammo
+    Bullets: 8
+    MaxAmmo: 10
+    Cooldown: 18
+    RecoilType: 0
+    Spread: 5
+Railgun:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: ENTITY_FIREWORK_BLAST
+    Fire: 
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 40
+    Range: 500
+    Damage: 25
+    Gravity: 0
+    TrailVisibility: 50
+    ExplosionRange: 0
+    ExplosionPower: 0
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Energy Cell
+    Bullets: 1
+    MaxAmmo: 6
+    Cooldown: 20
+    RecoilType: 0
+    Spread: 0
+Railgun Rifle:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: ENTITY_FIREWORK_BLAST
+    Fire: 
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 30
+    Range: 200
+    Damage: 12
+    Gravity: 0
+    TrailVisibility: 30
+    ExplosionRange: 0
+    ExplosionPower: 0
+  Gun:
+    Ammo: Energy Container
+    ParticleSpeed: 0
+    Bullets: 1
+    MaxAmmo: 16
+    Cooldown: 10
+    RecoilType: 0
+    Spread: 0
+Rocket Launcher:
+  Particle: 
+    Trail: CLOUD
+    Hit: EXPLOSION_HUGE
+  Sound:
+    Hit: ENTITY_GENERIC_EXPLODE
+    Fire: ENTITY_ENDERDRAGON_SHOOT
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 5
+    Range: 12000
+    Damage: 25
+    Gravity: 1
+    TrailVisibility: 80
+    ExplosionRange: 10
+    ExplosionPower: 50
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Rockets
+    Bullets: 1
+    MaxAmmo: 1
+    Cooldown: 50
+    RecoilType: 0
+    Spread: 0
+Test Launcher:
+  Particle: 
+    Trail: CLOUD
+    Hit: EXPLOSION_HUGE
+  Sound:
+    Hit: ENTITY_GENERIC_EXPLODE
+    Fire: ENTITY_ENDERDRAGON_SHOOT
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 15
+    Range: 15000
+    Damage: 50
+    Gravity: 1
+    TrailVisibility: 50
+    ExplosionRange: 50
+    ExplosionPower: 50
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Rocket
+    Bullets: 1
+    MaxAmmo: 1
+    Cooldown: 30
+    RecoilType: 0
+    Spread: 0
+Test Shotgun:
+  Particle: 
+    Trail: SPELL_INSTANT
+    Hit:
+  Sound:
+    Hit: 
+    Fire: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    OutOfAmmo: BLOCK_DISPENSER_FAIL
+  Bullet:
+    Speed: 20
+    Range: 50
+    Damage: 8
+    Gravity: 1
+    TrailVisibility: 50
+    ExplosionRange: 0
+    ExplosionPower: 0
+    ParticleSpeed: 0
+  Gun:
+    Ammo: Rifle Ammo
+    Bullets: 5
+    MaxAmmo: 10
+    Cooldown: 8
+    RecoilType: 0
+    Spread: 20

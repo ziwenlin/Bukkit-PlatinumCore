@@ -1,0 +1,13 @@
+name: ${project.artifactId}
+main: eu.platinumcore.plugin.PlatinumCore
+version: ${project.version}
+authors: 
+commands:
+  guns:
+    permissions: platinumcore.guns
+    description: Dice roll
+    usage: /guns
+  platinumcore:
+    permissions: platinumcore.command
+    description: Respawns yourself or a player
+    usage: /platinumcore <command>
