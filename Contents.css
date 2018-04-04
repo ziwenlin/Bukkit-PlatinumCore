@@ -1,0 +1,9 @@
+.content {
+    background-color: white;
+    /* float: left; */
+    display: block;
+    margin: 1em 0em;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 1em 2em;
+}
